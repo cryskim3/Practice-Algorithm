@@ -1,5 +1,6 @@
-# Practice-Algorithm - Leetcode
+# Leetcode challenge as a Junior developer 🤓
 
-## Leetcode challenge as a Junior developer 🤓
-- 1 leetcode question per day !
+Leetcode: <https://leetcode.com/>
+
+- 1 leetcode question a day !
 - Happy coding 
