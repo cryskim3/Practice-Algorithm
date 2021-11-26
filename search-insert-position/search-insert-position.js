@@ -4,24 +4,44 @@
  * @return {number}
  */
 
-var searchInsert = function(nums, target) {
+var searchInsert = function (nums, target) {
+  let low = 0;
+  let high = nums.length;
 
-    let low = 0;
-    let high = nums.length;
-    
-    while(low < high){
-        let middle = low + Math.floor((high-low)/2);
-        
-        if (target > nums[middle]) {
-            low = middle + 1;
-        } else {
-            high = middle;
-        }
+  while (low < high) {
+    let middle = low + Math.floor((high - low) / 2);
+
+    if (target > nums[middle]) {
+      low = middle + 1;
+    } else {
+      high = middle;
     }
-    return low;
-    
+  }
+  return low;
 };
 
+// var searchInsert = function(nums, target) {
+
+//     let low = 0;
+//     let high = nums.length;
+
+//     while(low < high){
+//         let middle = Math.floor((high+low)/2);
+//         //let middle = low + Math.floor((high-low)/2);
+//         // two different way to find the middle value
+
+//         if (target < nums[middle]) {
+//             high = middle-1;
+
+//         } else if(target > nums[middle]){
+
+//             low = middle + 1;
+//         } else {
+//             return middle;
+//         }
+//     }
+//     return low;
+// };
 
 // var searchInsert = function(nums, target) {
 
