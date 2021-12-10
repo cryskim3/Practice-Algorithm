@@ -31,6 +31,7 @@ function symmetryChecker(left, right) {
   );
 }
 
+// 아래 코드는 참고용
 // var isSymmetric = function(root) {
 //     var bFalse = true;
 
