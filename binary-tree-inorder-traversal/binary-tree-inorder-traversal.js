@@ -6,6 +6,7 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
+
 /**
  * @param {TreeNode} root
  * @return {number[]}
@@ -90,5 +91,4 @@ var inorderTraversal = (root) => {
  *          1
  *        2   2
  *      n  n 3  n
- *
  */
