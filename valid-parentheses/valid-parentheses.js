@@ -2,31 +2,30 @@
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function(s) {   
-    const stack = [];
-    const map = {
-      '(': ')',
-      '[': ']',
-      '{': '}'
+var isValid = function (s) {
+  const stack = [];
+  const map = {
+    "(": ")",
+    "[": "]",
+    "{": "}",
+  };
+
+  for (let i = 0; i < s.length; i++) {
+    let c = s[i];
+    if (map[c]) {
+      stack.push(map[c]);
+    } else if (c !== stack.pop()) {
+      return false;
     }
-    
-    for (let i = 0 ; i < s.length ; i++) {
-        let c = s[i];
-        if (map[c]) {
-          stack.push(map[c])
-        } else if (c !== stack.pop()) {
-          return false;
-        } 
-    }
-    
-    return !stack.length;
+  }
+
+  return !stack.length;
 };
 
-
 //Using Switch
-// var isValid = function(s) {   
+// var isValid = function(s) {
 //     const stack = [];
-    
+
 //     for (let i = 0 ; i < s.length ; i++) {
 //         let c = s.charAt(i);
 //         switch(c) {
@@ -42,6 +41,6 @@ var isValid = function(s) {
 //                 }
 //         }
 //     }
-    
+
 //     return stack.length === 0;
 // };
