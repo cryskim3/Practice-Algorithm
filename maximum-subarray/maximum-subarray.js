@@ -13,7 +13,6 @@ var maxSubArray = function (nums) {
 
   return max;
 };
-
 /**
  * 문제: 연속된 수들을 더하였을때, 가장 큰 합을 찾으시오.
  */
