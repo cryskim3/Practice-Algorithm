@@ -60,7 +60,5 @@ let climbStairs = function (n) {
 
 //         return climbStairs(n - 1) + climbStairs(n - 2);
 //         }
-
-//
 //     }
 // };
