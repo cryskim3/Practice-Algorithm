@@ -18,7 +18,7 @@ var maxDepth = function (root) {
   return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
 };
 
-//먼저 큐를 이용하여 인덱스 0값을 삭제
+// 큐를 이용하여 먼저 인덱스 0값을 삭제
 var maxDepth = (root) => {
   if (root === null) return 0;
   const queue = [root];
