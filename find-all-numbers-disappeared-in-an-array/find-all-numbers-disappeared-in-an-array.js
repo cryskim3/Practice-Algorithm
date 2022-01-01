@@ -4,6 +4,27 @@
  */
 
 var findDisappearedNumbers = function(nums) {
+    
+  let map = {}
+
+    for(let i = 0; i < nums.length; i++){
+      if(!map[nums[i]]) {
+          map[nums[i]] = true
+      } 
+  }
+    
+    for(let i = 1; i <= nums.length; i++){
+       if(i in map) 
+          delete map[i]
+       else      
+           map[i] = false
+    }
+    
+return Object.keys(map)
+    
+};
+
+var findDisappearedNumbers = function(nums) {
     let res = [];
     for (let i = 0; i < nums.length; i++) {
         let num = Math.abs(nums[i]);
